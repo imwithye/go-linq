@@ -7,7 +7,7 @@ import (
 
 func TestSelect(t *testing.T) {
 	source := []int{1, 2, 3, 4, 5}
-	selector := func(v int) string {
+	selector := func(idx int, v int) string {
 		return strconv.Itoa(v * 2)
 	}
 	want := []string{"2", "4", "6", "8", "10"}
